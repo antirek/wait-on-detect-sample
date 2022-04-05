@@ -1,0 +1,23 @@
+{
+  "name": "wait-on-detect-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antirek/wait-on-detect-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antirek/wait-on-detect-sample/issues"
+  },
+  "homepage": "https://github.com/antirek/wait-on-detect-sample#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "wait-on": "^6.0.1"
+  }
+}
