@@ -5,10 +5,17 @@ var opts = {
     'http-get://localhost:3000/status',
   ],
   interval: 2 * 1000,
+  timeout: 30 * 1000,
+  verbose: true,
 };
 
 async function start() {
-  const result = await waitOn(opts);
+  try {
+    const result = await waitOn(opts);
+  } catch (err) {
+    console.log('error on start', err);
+    process.exit(1);
+  }
   console.log('started');
 }
 

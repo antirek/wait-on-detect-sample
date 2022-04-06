@@ -8,7 +8,7 @@ app.get('/status', (req, res) => {
   console.log('/status', fail);
   setTimeout(() => {
     fail = true;
-  }, 20 * 1000);
+  }, 100 * 1000);
 
   if (!fail) {
     console.log('fail', fail);
