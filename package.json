@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/antirek/wait-on-detect-sample#readme",
   "dependencies": {
+    "delay": "^5.0.0",
     "express": "^4.17.3",
     "wait-on": "^6.0.1"
   }
