@@ -2,19 +2,19 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-let fail = false;
+let isReady = false;
 
 app.get('/status', (req, res) => {
-  console.log('/status', fail);
+  console.log('/status', isReady);
   setTimeout(() => {
-    fail = true;
-  }, 100 * 1000);
+    isReady = true;
+  }, 10 * 1000);
 
-  if (!fail) {
-    console.log('fail', fail);
-    return res.status(300).json({status: 'fail'});
+  if (!isReady) {
+    console.log('isReady', isReady);
+    // return res.status(300).json({status: 'fail'});
   }
-  res.json({status: 'ok'});
+  // res.json({status: 'ok'});
 })
 
 app.listen(port, () => {
